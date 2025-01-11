@@ -68,7 +68,8 @@ jobs:
     permissions:
       contents: read
     strategy:
-      fail-fast: false
+      fail-fast: search/index.json linguist-generated
+
       matrix:
         os: [macos-13-xl-arm64, windows-2019]
         arch: [x64, arm64]
